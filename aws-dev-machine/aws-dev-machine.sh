@@ -10,21 +10,21 @@
 inst="i-0f4bacddf2d743c6f"
 
 start() {
-    echo "Start $inst"
+    echo "Start $inst" >&2
     aws ec2 start-instances \
         --instance-ids $inst \
         --output text
 }
 
 stop() {
-    echo "Stop $inst"
+    echo "Stop $inst" >&2
     aws ec2 stop-instances \
         --instance-ids $inst \
         --output text
 }
 
 status() {
-    echo "Status $1"
+    echo "Status $1" >&2
 
     res=$(aws ec2 describe-instances \
         --instance-ids $inst \
