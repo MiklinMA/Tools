@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-# 
+#
 # 2018
 # Mike Miklin <MiklinMA@gmail.com>
 #
 # Simple redirect from HTTP to HTTPs
 # without Apache or Nginx
-# 
+#
 
 
 from __future__ import print_function
